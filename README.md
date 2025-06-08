@@ -55,37 +55,6 @@ All components are serialized and integrated into the app using `joblib`.
 
 ---
 
-## 🛠️ Setup for Training (Linux/macOS/Windows)
-
-### 🐍 Create a virtual environment (optional but recommended)
-
-```bash
-python -m venv doodledetect-env
-source doodledetect-env/bin/activate  # or .\doodledetect-env\Scripts\activate on Windows
-```
-
-### 📦 Install requirements
-
-```bash
-pip install -r requirements.txt
-```
-
-### 🔧 Run the training script
-
-```bash
-cd training
-python train_clip_svm.py
-```
-
-This will:
-
-* Load preprocessed datasets
-* Extract CLIP features
-* Apply PCA
-* Train and save the SVM model + preprocessing steps
-
----
-
 ## 📈 Performance
 
 | Dataset   | Top-1 Accuracy | Top-5 Accuracy |
