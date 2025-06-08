@@ -1,11 +1,8 @@
-
 # 🎨 DoodleDetect — Sketch Recognition with CLIP + SVM + FAISS
 
-DoodleDetect is a fun and intelligent sketch recognition system powered by OpenAI’s CLIP, Principal Component Analysis (PCA), and Support Vector Machine (SVM). Designed with both performance and personality, it includes a full-featured GUI, educational utility, and a mascot named Pixie to welcome you into the world of doodle classification.
+DoodleDetect is a fun and intelligent sketch recognition system powered by OpenAI’s CLIP, Principal Component Analysis (PCA), Support Vector Machine (SVM), and FAISS for fast similarity search. Designed with both performance and personality, it includes a full-featured GUI, educational utility, and a mascot named Pixie to welcome you into the world of doodle classification.
 
 > ✨ Whether you're drawing a palm tree, a windmill, or something in between — DoodleDetect is here to guess it (almost) correctly!
-
-
 
 ---
 
@@ -20,7 +17,8 @@ DoodleDetect is a fun and intelligent sketch recognition system powered by OpenA
 ## ✏️ Features
 
 * 🎨 Draw your own sketches in an intuitive GUI
-* 🔍 Real-time classification powered by CLIP + SVM
+* 🔍 Real-time classification powered by CLIP + SVM + FAISS
+* ⚡ Ultra-fast similarity-based retrieval using FAISS
 * 📂 Log predictions and revisit previous drawings
 * 💾 Save and load sketches in PNG format
 * 📖 Learn how it works in the About section
@@ -41,17 +39,17 @@ DoodleDetect is a fun and intelligent sketch recognition system powered by OpenA
 
 ### Training Pipeline (Python)
 
-* ✨ **CLIP (ViT-B/32)** for extracting semantic image features
-* 📉 **PCA** for dimensionality reduction (from 512 → 256)
-* 🧮 **SVM** with RBF kernel for classification
-* 🔁 **FAISS** for fast nearest neighbor search (optional for retrieval tasks)
+* ✨ **CLIP (ViT-B/32)** — Extracts semantic sketch features
+* 📉 **PCA** — Reduces high-dimensional CLIP features to 256
+* 🧮 **SVM (RBF)** — Classifies sketches based on reduced features
+* 🔁 **FAISS** — Provides fast retrieval of visually similar sketches
 
 All components are serialized and integrated into the app using `joblib`.
 
 ### Datasets Used
 
-* **TU-Berlin** (20,000 sketches, 250 classes)
-* **Sketchy** (75,000 sketches, 125 classes)
+* **TU-Berlin** — 20,000 sketches from 250 categories
+* **Sketchy** — 75,000+ sketches across 125 object classes
 
 ---
 
@@ -70,8 +68,8 @@ All components are serialized and integrated into the app using `joblib`.
 
 * `torch`, `transformers` — CLIP feature extraction
 * `scikit-learn` — PCA, SVM, scaling
-* `faiss-cpu` — similarity search (optional)
-* `tkinter`, `Pillow` — GUI and image handling
+* `faiss-cpu` — 💡 FAISS for fast similarity search
+* `tkinter`, `Pillow` — GUI and image rendering
 * `joblib`, `numpy`, `os`, `csv`, `datetime`
 
 ---
@@ -84,14 +82,12 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ## 🧑‍💻 Credits
 
-Developed by 📚 students of **Bina Nusantara University**
-Powered by the open-source ML ecosystem 🌍
-Special thanks to OpenAI & HuggingFace!
-
+Developed by 📚 students of **Bina Nusantara University**  
+Powered by the open-source ML ecosystem 🌍  
+Special thanks to OpenAI, FAISS, HuggingFace, and the Python community!
 
 ---
 
 ## ⭐️ Show Some Love
 
 If you enjoyed using or learning from this project, give it a star ⭐ and share it with your friends. Let’s make AI and creativity best friends again!
-
