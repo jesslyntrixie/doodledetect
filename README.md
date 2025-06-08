@@ -88,11 +88,6 @@ Developed by 📚 students of **Bina Nusantara University**
 Powered by the open-source ML ecosystem 🌍
 Special thanks to OpenAI & HuggingFace!
 
----
-
-## 📄 License
-
-[MIT License](LICENSE)
 
 ---
 
