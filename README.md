@@ -1,5 +1,5 @@
 
-# 🎨 DoodleDetect — Sketch Recognition with CLIP + SVM
+# 🎨 DoodleDetect — Sketch Recognition with CLIP + SVM + FAISS
 
 DoodleDetect is a fun and intelligent sketch recognition system powered by OpenAI’s CLIP, Principal Component Analysis (PCA), and Support Vector Machine (SVM). Designed with both performance and personality, it includes a full-featured GUI, educational utility, and a mascot named Pixie to welcome you into the world of doodle classification.
 
