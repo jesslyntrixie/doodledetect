@@ -28,7 +28,7 @@ DoodleDetect is a fun and intelligent sketch recognition system powered by OpenA
 
 ## ⚙️ How to Run the App (Windows)
 
-1. **Download the `.zip` release from [Releases](https://github.com/jesslyntrixie//DoodleDetect/releases)**
+1. **Download the `.zip` release from [Releases](https://github.com/jesslyntrixie/DoodleDetect/releases)**
 2. **Extract the zip** completely (⚠️ Do NOT run it from inside the archive)
 3. **Double-click `doodledetect.exe`**
 4. **Wait patiently!** It may take 5–10 seconds to load. Don’t click multiple times.
